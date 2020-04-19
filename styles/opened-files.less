@@ -32,10 +32,8 @@ ul.tab-bar>li.tab.of-highlight:after {
   background-color: @tree-view-background-color;
   overflow: scroll;
   min-height: 33px;
-  max-height: 210px;
   flex: 0 0 auto;
   >ol.list-tree {
-    font-size: 11px;
     span.icon {
       display:inline-block;
     }
@@ -64,13 +62,13 @@ ul.tab-bar>li.tab.of-highlight:after {
       text-shadow: none;
     }
     .directory {
+      font-style: italic;
       .icon-x {
         z-index: 10;
         margin-left: .5em;
       }
       &.list-nested-item {
         .list-tree.entries {
-          max-height: 25vh;
           overflow: auto;
         }
       }
